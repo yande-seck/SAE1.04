@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon E-Portfolio de Compétences</title>
+    <style>
+        /* Style global */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Entête */
+        header {
+            background-color:rgb(91, 0, 143);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color:rgb(95, 0, 143);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            color:rgb(75, 0, 121);
+            margin-top: 0;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .competence {
+            margin-bottom: 40px;
+            padding: 30px;
+            background-color: #fafafa;
+            border-radius: 8px;
+            border-left: 5px solidrgb(100, 0, 143);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .competence h3 {
+            color:rgb(89, 0, 121);
+            font-size: 1.6em;
+            margin-bottom: 15px;
+        }
+
+        .competence ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .competence ul li {
+            margin-bottom: 10px;
+        }
+
+        .competence ul li a {
+            text-decoration: none;
+            color:rgb(112, 0, 143);
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .competence ul li a:hover {
+            color:rgb(49, 0, 77);
+        }
+
+        .reflexion {
+            font-size: 1.1em;
+            color: #555;
+            margin-top: 20px;
+            padding-left: 20px;
+            border-left: 5px solidrgb(93, 0, 143);
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        footer {
+            background-color:rgb(103, 0, 143);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Animation */
+        header h1 {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .competence {
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        /* Keyframe animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            section {
+                margin: 20px;
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            .competence {
+                padding: 20px;
+            }
+
+            .competence h3 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color:rgb(101, 30, 148);" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ndéye Yandé Seck</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/aida/cv">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/aida">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/aida/avis">Avis</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1>Mon E-Portfolio de Compétences</h1>
+    </header>
+
+    <section id="competence1">
+        <div class="competence">
+            <h2>Compétence 1 : Administrer les Réseaux et l’Internet</h2>
+            <h3>Maîtriser les Lois Fondamentales de l’Électricité et Configurer le Réseau Local</h3>
+            <p>J'ai acquis des compétences dans l'administration des réseaux et l'Internet, en comprenant les principes fondamentaux de l'électricité appliqués aux équipements de réseaux. Je maîtrise la configuration des fonctions de base d'un réseau local, l'installation de postes clients, ainsi que l'identification et la résolution des dysfonctionnements du réseau.</p>
+            <p>Pour en savoir plus sur ces sujets, vous pouvez consulter les ressources suivantes :</p>
+            <ul>
+                <li><a href="https://docs.google.com/document/d/1QzdUlTnrGNHhUQ3q3iOrH-bhSWJNIHGJ5oL-hAOZrHE/edit?usp=sharing" target="_blank">Documentation Cisco sur les réseaux locaux</a></li>
+                <li><a href="https://docs.google.com/document/d/1VYe-n1thPZWCFNEViqncYEIdiuHb5nitaeY75l-BpZs/edit?usp=sharing" target="_blank">Guide de configuration des réseaux locaux</a></li>
+            </ul>
+            <div class="reflexion">
+                <h4>Analyse Réflexive :</h4>
+                <p>Grâce à des projets pratiques, j'ai appris à configurer et administrer des réseaux locaux, à optimiser leur performance et à assurer leur sécurité. Ces compétences sont essentielles pour le bon fonctionnement des infrastructures réseaux.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="competence2">
+        <div class="competence">
+            <h2>Compétence 2 : Connecter les Entreprises et les Usagers</h2>
+            <h3>Analyser les Signaux et Déployer les Supports de Transmission</h3>
+            <p>Cette compétence couvre l'analyse des signaux et la caractérisation des systèmes de transmission élémentaires. J'ai également acquis des compétences dans le déploiement de supports de transmission, essentiels pour la connectivité des entreprises.</p>
+            <p>Pour approfondir vos connaissances, voici quelques liens utiles :</p>
+            <ul>
+                <li><a href="https://docs.google.com/document/d/1YPmAEC6KG0ACdgFHLwIRT4iqJeA3_gJVquQe89W2Gsg/edit?usp=sharing" target="_blank">Analyse de trame réseau</a></li>
+            </ul>
+            <div class="reflexion">
+                <h4>Analyse Réflexive :</h4>
+                <p>En étudiant ces concepts, j'ai développé une capacité à analyser et à mesurer les signaux, ce qui est crucial pour maintenir et optimiser les systèmes de transmission. Ces compétences me permettent de mieux comprendre et de résoudre les problèmes liés aux communications numériques.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="competence3">
+        <div class="competence">
+            <h2>Compétence 3 : Créer des Outils et des Applications Informatiques pour les R&T</h2>
+            <h3>Développement d’Applications et Gestion des Données</h3>
+            <p>J'ai appris à utiliser divers systèmes informatiques et outils de développement, à lire et corriger des programmes, et à traduire des algorithmes dans des langages spécifiques. Je maîtrise également les technologies liées à la création de sites Web et à la gestion de données.</p>
+            <p>Voici des ressources pour mieux comprendre ces concepts :</p>
+            <ul>
+                <li><a href="https://docs.google.com/document/d/1MpxCUKUJZfG7Dkw43qqLSfUd7tTsqXo9jYfBxNv_qXo/edit?usp=sharing" target="_blank">Les protocoles de communication</a></li>
+            </ul>
+            <div class="reflexion">
+                <h4>Analyse Réflexive :</h4>
+                <p>À travers des projets de développement, j'ai appris à créer des outils informatiques adaptés aux besoins des réseaux et télécommunications. Cette expérience m'a permis de mieux comprendre l'importance de la gestion efficace des données et de l'intégration collaborative dans un environnement de développement.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mon E-Portfolio - Tous droits réservés</p>
+    </footer>
+
+</body>
+
+</html>

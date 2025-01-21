@@ -40,4 +40,11 @@ class AidaController extends AbstractController
             'controller_name' => 'AidaController',
         ]);
     }
+    #[Route('/aida/portfolio', name: 'portfolio')]
+    public function portfolio(): Response
+    {
+        return $this->render('aida/portfolio.html.twig', [
+            'controller_name' => 'AidaController',
+        ]);
+    }
 }
